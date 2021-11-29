@@ -1,0 +1,28 @@
+@mixin defineColor($class, $color) {
+    .c-#{$class} {
+        color: $color !important;
+    }
+    .bgc-#{$class} {
+        background-color: $color !important;
+    }
+    .bdc-#{$class} {
+        border-color: $color !important;
+    }
+}
+
+//PRIMARY
+@include defineColor('plight', $primarylight);
+@include defineColor('pmedium', $primarymedium);
+@include defineColor('pdark', $primarydark);
+//NEUTRAL
+@include defineColor('nlight', $neutrallight);
+@include defineColor('nmedium', $neutralmedium);
+@include defineColor('ndark', $neutraldark);
+//SECONDAY
+@include defineColor('slight', $secondarylight);
+@include defineColor('smedium', $secondarymedium);
+@include defineColor('sdark', $secondarydark);
+//HIGHLIGHT
+@include defineColor('hlight', $highlightlight);
+@include defineColor('hmedium', $highlightmedium);
+@include defineColor('hdark', $highlightdark);
